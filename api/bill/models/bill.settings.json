@@ -1,0 +1,48 @@
+{
+  "info": {
+    "name": "bill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "idBuyUser": {
+      "type": "biginteger",
+      "required": true
+    },
+    "idSellUser": {
+      "type": "biginteger",
+      "required": true
+    },
+    "idProduct": {
+      "type": "biginteger",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "sellTime": {
+      "type": "datetime"
+    },
+    "paymentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Paid",
+        "Unpaid"
+      ]
+    },
+    "orderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "AwaitingPackage",
+        "Delivery",
+        "Received"
+      ]
+    }
+  },
+  "connection": "default",
+  "collectionName": "bills"
+}

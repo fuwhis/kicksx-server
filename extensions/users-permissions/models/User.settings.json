@@ -1,0 +1,116 @@
+{
+  "connection": "default",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "required": true
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "idBuyUser": {
+      "type": "biginteger"
+    },
+    "idSellUser": {
+      "type": "biginteger"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string",
+      "required": false
+    },
+    "lastName": {
+      "type": "string",
+      "required": false
+    },
+    "addressBuying": {
+      "type": "text",
+      "required": false
+    },
+    "addressSelling": {
+      "type": "text"
+    },
+    "nameCard": {
+      "type": "string"
+    },
+    "accountNumber": {
+      "type": "string"
+    },
+    "banking": {
+      "type": "text"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "phoneNumberBuying": {
+      "type": "string"
+    },
+    "phoneNumberSelling": {
+      "type": "string"
+    },
+    "sellingName": {
+      "type": "string",
+      "required": false
+    },
+    "buyingName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "bid"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "idProduct": {
+      "type": "biginteger"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "idBuyUser": {
+      "type": "biginteger"
+    }
+  },
+  "connection": "default",
+  "collectionName": "bids"
+}

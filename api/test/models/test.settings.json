@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "feild1": {
+      "type": "string"
+    },
+    "field2": {
+      "type": "richtext"
+    }
+  },
+  "connection": "default",
+  "collectionName": "tests"
+}

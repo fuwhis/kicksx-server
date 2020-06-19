@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "auctions",
+  "info": {
+    "name": "auction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "idBuyUser": {
+      "type": "biginteger",
+      "required": true,
+      "unique": false
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "auctionTime": {
+      "type": "datetime"
+    },
+    "auctionStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Auctioning",
+        "End"
+      ]
+    },
+    "idProduct": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

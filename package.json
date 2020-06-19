@@ -1,0 +1,44 @@
+{
+  "name": "kicksxdeve",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "0.20.10",
+    "nexmo": "^2.6.0",
+    "pg": "latest",
+    "pm2": "^4.3.0",
+    "strapi": "3.0.0-beta.18.7",
+    "strapi-admin": "3.0.0-beta.18.7",
+    "strapi-connector-bookshelf": "3.0.0-beta.18.7",
+    "strapi-plugin-content-manager": "3.0.0-beta.18.7",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.18.7",
+    "strapi-plugin-email": "3.0.0-beta.18.7",
+    "strapi-plugin-upload": "3.0.0-beta.18.7",
+    "strapi-plugin-users-permissions": "3.0.0-beta.18.7",
+    "strapi-provider-email-gmail-oauth2": "^0.1.6",
+    "strapi-provider-email-sendmail": "^3.0.0-beta.18.7",
+    "strapi-utils": "3.0.0-beta.18.7"
+  },
+  "author": {
+    "name": "Developer"
+  },
+  "strapi": {
+    "uuid": "fac46c4d-557f-40cb-b490-5f85da37b1a6"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

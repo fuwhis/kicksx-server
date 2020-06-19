@@ -1,0 +1,65 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/asks",
+      "handler": "ask.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/asks/count",
+      "handler": "ask.count",
+      "config": {
+        "policies": []
+      }
+    },
+    { 
+      "method": "GET",
+      "path": "/asks/:id",
+      "handler": "ask.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/asks",
+      "handler": "ask.create",
+      "config": {
+        "policies": ["isSameUser"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/asks/:id",
+      "handler": "ask.update",
+      "config": {
+        "policies": ["isSameUser"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/asks/:id",
+      "handler": "ask.delete",
+      "config": {
+        "policies": ["isSameUser"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ask_bid_price/:name/:size",
+      "handler": "ask.prices",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/asks_index",
+      "handler": "ask.index"
+    }
+  ]
+}

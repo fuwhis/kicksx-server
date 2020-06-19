@@ -1,0 +1,66 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "type": "string"
+    },
+    "sellPrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "buyPrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "desription": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Sneaker",
+        "Streetwear"
+      ],
+      "required": false
+    },
+    "condition": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Old"
+      ]
+    },
+    "sellStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Selling",
+        "Sold"
+      ]
+    },
+    "idSellUser": {
+      "type": "biginteger",
+      "required": false,
+      "unique": false
+    },
+    "size": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

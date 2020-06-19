@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "postgres",
+        "database": "kicksx",
+        "host": "34.68.224.89",
+        "port": 5432,
+        "username": "minhthong",
+        "password": "minhthong"
+      },
+      "options": {}
+    }
+  }
+}

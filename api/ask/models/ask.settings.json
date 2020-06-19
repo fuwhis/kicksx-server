@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "ask"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "idProduct": {
+      "type": "biginteger"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "idSellUser": {
+      "type": "biginteger"
+    }
+  },
+  "connection": "default",
+  "collectionName": "asks"
+}
